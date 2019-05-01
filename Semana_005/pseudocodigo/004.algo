@@ -1,0 +1,16 @@
+ACCION intercambiar (ENTERO *x, ENTERO *y) 
+	ENTERO aux
+	aux=*x
+	*x=*y
+	*y=aux
+FIN_ACCION
+
+
+ACCION principal()
+	ENTERO a, b
+	LEER (a, b)
+	ESCRIBIR(a, b)
+	intercambiar(&a, &b)
+	ESCRIBIR(a, b)
+FIN_ACCION
+	

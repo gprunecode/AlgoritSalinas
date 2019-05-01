@@ -1,0 +1,248 @@
+%%
+%% (
+%%  )\ )                             (
+%%  (()/(   (            (             )\  )   (
+%%   /(_))  ))\   (       ))\  (   (   (()/(   ))\
+%%   (_))  /((_)  )\  )  /((_) )\  )\   ((_))/((_)
+%%   | _ \(_))(  _(_/( (_) )  ((_)((_)  _| |(_))
+%%   |   /| || || ' \))/ -_)/ _|/ _ \/ _` |/ -_)
+%%   |_|_\ \_,_||_||_| \___|\__|\___/\__,_|\___|
+%%
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx} % Paquete para incluir imágenes en el documento LaTeX
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+}
+\urlstyle{same}
+\usepackage{varwidth}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\usepackage{multirow}
+
+\usepackage[a4paper,rmargin=1.5cm,lmargin=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+
+\usepackage{pdfpages}
+
+\usepackage{xcolor}
+\usepackage{minted}
+\usemintedstyle[cpp]{monokai}
+\usemintedstyle[python]{paraiso-dark}
+\definecolor{LightGray}{gray}{0.9}
+\definecolor{DarkGray}{gray}{0.1}
+\definecolor{MidGray}{gray}{0.8}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\setlength{\parindent}{0px}  % Setea la indentacion de la primera linea de cada parrafo a cero pixeles.
+
+
+\title{Resolución de la quinta semana}
+\author{@RuneCode}
+
+\begin{document}
+%% Portada
+\includepdf{./portada/portada.pdf}
+
+
+%-----------------------------------------------------------------------------------------
+%Primer problema
+\section{Quinta Semana}%
+En esta clase se revisaron los temas de:
+\begin{itemize}
+\item \textbf{Uso de apuntadores}
+\item \textbf{Programación Modular}
+\item \textbf{Tipos de Subprogramas}(Función, Predicado y Procedimiento)
+\end{itemize}
+\vspace{1cm}
+\textbf{Nota:} Te recomendamos realizar los ejercicios antes de ver su solución
+ya que el objetivo de este documento es presentarte una de las muchas posibles
+soluciones. Si tienes alguna sugerencia de mejora puedes comunicarte por correo
+a la dirección \href{mailto:gprunecode@gmail.com}{gprunecode@gmail.com}.
+
+\section{Ejemplos}%
+\textbf{\textit{Problema 1}} Implementar una \textbf{función} para la suma de 2 números enteros\\
+\textit{Resolución en pseudocódigo}\\ 
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/001.algo}
+
+%C
+\textit{Resolución en C}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./c/ejercicio1.cpp}
+\clearpage
+
+\vspace{1cm}
+
+%---------------------------------------------------------------------------------
+%Segundo problema
+
+\textbf{\textit{Problema 2}} Implementar un \textbf{procedimiento} para la suma de 2 números enteros\\
+\textit{Resolución en pseudocódigo}\\ 
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/002.algo}
+
+
+%C
+\textit{Resolución en C}\\
+
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./c/ejercicio2.cpp}
+\clearpage
+
+\vspace{1cm}
+
+%------------------------------------------------------------------------------------
+%Tercer problema
+
+\textbf{\textit{Problema 3}} Hallar la suma de los n primeros multiplos de 3\\
+\textit{Resolución en pseudocódigo}\\ 
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/003.algo}
+
+
+%C
+\textit{Resolución en C}\\
+
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./c/ejercicio3.cpp}
+\clearpage
+
+\vspace{1cm}
+
+%---------------------------------------------------------------------------------
+%Cuarto problema
+
+\textbf{\textit{Problema 4}} Implemente un \textbf{procedimiento} que intercambie los valores de a y b\\
+
+\textit{Resolución en pseudocódigo}\\ 
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/004.algo}
+
+
+%C
+\textit{Resolución en C}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./c/ejercicio4.cpp}
+\clearpage
+
+\vspace{1cm}
+
+%---------------------------------------------------------------------------------
+\vspace{3cm} 
+\section{¡Envianos tus soluciones!}
+Si estás llevando este curso con los profesores Cabrera, Romero o Salinas; envíanos tus soluciones en los diferentes lenguajes de programación que conozcas al correo \href{mailto:gprunecode@gmail.com}{gprunecode@gmail.com}. n.n \\ 
+
+
+Las mejores soluciones tanto en el algoritmo como en el código, serán publicadas en las siguientes ediciones de estos documentos.\\ \\
+
+El asunto del correo debe estar de la siguiente manera:\\
+$NumeroDeSesion-Profesor-NumeroDeEjercicio$ \\ \\
+Por ejemplo:  \\
+$01-Romero-01$ \\
+
+Y dentro del correo adjuntar tu solución y nombre como quieras ser reconocido en caso de ser electo.
+
+\vspace{2cm}
+\LARGE\textit{RuneCode}
+
+\end{document}

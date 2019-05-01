@@ -1,0 +1,13 @@
+ACCION suma (ENTERO x, ENTERO y, ENTERO *z) 
+	ENTERO s
+	s = x+y
+	*z = s
+FIN_ACCION
+
+
+ACCION principal()
+	ENTERO a, b, c
+	LEER (a, b)
+	suma(a,b,&c)
+	ESCRIBIR(c)
+FIN_ACCION

@@ -1,0 +1,27 @@
+ACCION suma (ENTERO x, ENTERO y, ENTERO *z) 
+	ENTERO i, sm3, conti, n
+	i=1
+	sm3=0
+	conti=0
+	LEER(n)
+	MIENTRAS(conti<n)
+		SI(verifMulti3(i))
+			sm3=sm3+i
+			conti=conti+1
+		FIN_SI
+		i=i+1
+	FIN_MIENTRAS
+	ESCRIBIR(sm3)	
+FIN_ACCION
+
+ACCION verifMulti3(ENTERO x)
+	SI(x MOD 3 = 0)
+		RETORNAR(V)
+	SINO
+		RETORNAR(F)
+	FIN_SI	
+FIN_ACCION
+
+ACCION principal()
+	multi3()
+FIN_ACCION

@@ -1,0 +1,14 @@
+ACCION suma (ENTERO n1, ENTERO n2) 
+	ENTERO s
+	s = n1+n2
+	RETORNAR(s)
+FIN_ACCION
+
+
+ACCION principal()
+	ENTERO a, b, c
+	LEER (a, b)
+	c = suma(a,b)
+	ESCRIBIR(c)
+FIN_ACCION
+	
