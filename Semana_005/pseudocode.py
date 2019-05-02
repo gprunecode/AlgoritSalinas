@@ -49,7 +49,7 @@ class PseudocodeLexer(RegexLexer):
                  (r'[\s]+', Text)
         ],
         'core':[ # Statements
-                 (r'\b(inicio|fin|si|entonces|sino|fin[_ ]si|tant[ _]que|mietras|fin[ _]mientras|hacer|repetir'
+                 (r'\b(inicio|fin|si|entonces|sino|fin[_ ]si|tant[ _]que|mientras|fin[ _]mientras|hacer|repetir'
                   r'repeter|type|structure|fin[ _]structure|fonction|procédure|procedure|retourner|renvoyer|'
                   r'para|fin[ _]para|hasta|déclarations?|juqsque|spécialise|specialise|comporte|super|public|D.V.|privé|protégé|'
                   r'classe'

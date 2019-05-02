@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nv}{ACCION} \PYG{n+nv}{suma} \PYG{p}{(}\PYG{k+kt}{ENTERO }\PYG{n+nv}{n1}\PYG{p}{,} \PYG{k+kt}{ENTERO }\PYG{n+nv}{n2}\PYG{p}{)} 
+	\PYG{k+kt}{ENTERO }\PYG{n+nv}{s}
+	\PYG{n+nv}{s} \PYG{o}{=} \PYG{n+nv}{n1}\PYG{o}{+}\PYG{n+nv}{n2}
+	\PYG{n+nv}{RETORNAR}\PYG{p}{(}\PYG{n+nv}{s}\PYG{p}{)}
+\PYG{n+nv}{FIN\PYGZus{}ACCION}
+
+
+\PYG{n+nv}{ACCION} \PYG{n+nv}{principal}\PYG{p}{()}
+	\PYG{k+kt}{ENTERO }\PYG{n+nv}{a}\PYG{p}{,} \PYG{n+nv}{b}\PYG{p}{,} \PYG{n+nv}{c}
+	\PYG{n+nv}{LEER} \PYG{p}{(}\PYG{n+nv}{a}\PYG{p}{,} \PYG{n+nv}{b}\PYG{p}{)}
+	\PYG{n+nv}{c} \PYG{o}{=} \PYG{n+nv}{suma}\PYG{p}{(}\PYG{n+nv}{a}\PYG{p}{,}\PYG{n+nv}{b}\PYG{p}{)}
+	\PYG{n+nv}{ESCRIBIR}\PYG{p}{(}\PYG{n+nv}{c}\PYG{p}{)}
+\PYG{n+nv}{FIN\PYGZus{}ACCION}
+	
+\end{Verbatim}

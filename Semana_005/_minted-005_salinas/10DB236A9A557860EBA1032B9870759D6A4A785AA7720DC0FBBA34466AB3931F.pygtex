@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nv}{ACCION} \PYG{n+nv}{multi3} \PYG{p}{(}\PYG{k+kt}{ENTERO }\PYG{n+nv}{x}\PYG{p}{,} \PYG{k+kt}{ENTERO }\PYG{n+nv}{y}\PYG{p}{,} \PYG{k+kt}{ENTERO} \PYG{o}{*}\PYG{n+nv}{z}\PYG{p}{)} 
+	\PYG{k+kt}{ENTERO }\PYG{n+nv}{i}\PYG{p}{,} \PYG{n+nv}{sm3}\PYG{p}{,} \PYG{n+nv}{conti}\PYG{p}{,} \PYG{n+nv}{n}
+	\PYG{n+nv}{i}\PYG{o}{=}\PYG{l+m+mi}{1}
+	\PYG{n+nv}{sm3}\PYG{o}{=}\PYG{l+m+mi}{0}
+	\PYG{n+nv}{conti}\PYG{o}{=}\PYG{l+m+mi}{0}
+	\PYG{n+nv}{LEER}\PYG{p}{(}\PYG{n+nv}{n}\PYG{p}{)}
+	\PYG{k}{MIENTRAS}\PYG{p}{(}\PYG{n+nv}{conti}\PYG{o}{\PYGZlt{}}\PYG{n+nv}{n}\PYG{p}{)}
+		\PYG{k}{SI}\PYG{p}{(}\PYG{n+nv}{verifMulti3}\PYG{p}{(}\PYG{n+nv}{i}\PYG{p}{))}
+			\PYG{n+nv}{sm3}\PYG{o}{=}\PYG{n+nv}{sm3}\PYG{o}{+}\PYG{n+nv}{i}
+			\PYG{n+nv}{conti}\PYG{o}{=}\PYG{n+nv}{conti}\PYG{o}{+}\PYG{l+m+mi}{1}
+		\PYG{k}{FIN\PYGZus{}SI}
+\PYG{k}{		}\PYG{n+nv}{i}\PYG{o}{=}\PYG{n+nv}{i}\PYG{o}{+}\PYG{l+m+mi}{1}
+	\PYG{k}{FIN\PYGZus{}MIENTRAS}
+\PYG{k}{	}\PYG{n+nv}{ESCRIBIR}\PYG{p}{(}\PYG{n+nv}{sm3}\PYG{p}{)}	
+\PYG{n+nv}{FIN\PYGZus{}ACCION}
+
+\PYG{n+nv}{ACCION} \PYG{n+nv}{verifMulti3}\PYG{p}{(}\PYG{k+kt}{ENTERO }\PYG{n+nv}{x}\PYG{p}{)}
+	\PYG{k}{SI}\PYG{p}{(}\PYG{n+nv}{x} \PYG{o}{MOD} \PYG{l+m+mi}{3} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{)}
+		\PYG{n+nv}{RETORNAR}\PYG{p}{(}\PYG{n+nv}{V}\PYG{p}{)}
+	\PYG{k}{SINO}
+\PYG{k}{		}\PYG{n+nv}{RETORNAR}\PYG{p}{(}\PYG{n+nv}{F}\PYG{p}{)}
+	\PYG{k}{FIN\PYGZus{}SI	}
+\PYG{n+nv}{FIN\PYGZus{}ACCION}
+
+\PYG{n+nv}{ACCION} \PYG{n+nv}{principal}\PYG{p}{()}
+	\PYG{n+nv}{multi3}\PYG{p}{()}
+\PYG{n+nv}{FIN\PYGZus{}ACCION}
+\end{Verbatim}

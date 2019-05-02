@@ -1,4 +1,4 @@
-ACCION suma (ENTERO x, ENTERO y, ENTERO *z) 
+ACCION multi3 (ENTERO x, ENTERO y, ENTERO *z) 
 	ENTERO i, sm3, conti, n
 	i=1
 	sm3=0

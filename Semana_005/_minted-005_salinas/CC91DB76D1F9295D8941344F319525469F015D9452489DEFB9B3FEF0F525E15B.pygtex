@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nv}{ACCION} \PYG{n+nv}{intercambiar} \PYG{p}{(}\PYG{k+kt}{ENTERO} \PYG{o}{*}\PYG{n+nv}{x}\PYG{p}{,} \PYG{k+kt}{ENTERO} \PYG{o}{*}\PYG{n+nv}{y}\PYG{p}{)} 
+	\PYG{k+kt}{ENTERO }\PYG{n+nv}{aux}
+	\PYG{n+nv}{aux}\PYG{o}{=*}\PYG{n+nv}{x}
+	\PYG{o}{*}\PYG{n+nv}{x}\PYG{o}{=*}\PYG{n+nv}{y}
+	\PYG{o}{*}\PYG{n+nv}{y}\PYG{o}{=}\PYG{n+nv}{aux}
+\PYG{n+nv}{FIN\PYGZus{}ACCION}
+
+
+\PYG{n+nv}{ACCION} \PYG{n+nv}{principal}\PYG{p}{()}
+	\PYG{k+kt}{ENTERO }\PYG{n+nv}{a}\PYG{p}{,} \PYG{n+nv}{b}
+	\PYG{n+nv}{LEER} \PYG{p}{(}\PYG{n+nv}{a}\PYG{p}{,} \PYG{n+nv}{b}\PYG{p}{)}
+	\PYG{n+nv}{ESCRIBIR}\PYG{p}{(}\PYG{n+nv}{a}\PYG{p}{,} \PYG{n+nv}{b}\PYG{p}{)}
+	\PYG{n+nv}{intercambiar}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nv}{a}\PYG{p}{,} \PYG{o}{\PYGZam{}}\PYG{n+nv}{b}\PYG{p}{)}
+	\PYG{n+nv}{ESCRIBIR}\PYG{p}{(}\PYG{n+nv}{a}\PYG{p}{,} \PYG{n+nv}{b}\PYG{p}{)}
+\PYG{n+nv}{FIN\PYGZus{}ACCION}
+	
+\end{Verbatim}
